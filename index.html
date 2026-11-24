@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Draft Coach – Download</title>
+  <meta name="description" content="Draft Coach schlägt dir in der Champion-Auswahl von League of Legends den besten Pick aus deinem eigenen Champpool vor.">
+  <link rel="icon" href="icon.png">
+  <style>
+    :root {
+      --bg: #0e1218; --panel: #161c25; --panel2: #1d2531; --line: #2a3442;
+      --text: #e6ebf2; --muted: #8b98aa; --accent: #e0a437; --good: #4fc78a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.55 "Segoe UI", system-ui, -apple-system, sans-serif;
+    }
+    main { max-width: 860px; margin: 0 auto; padding: 56px 24px 40px; }
+    a { color: var(--accent); }
+    h1 { font-size: 40px; line-height: 1.1; margin: 0; letter-spacing: -.5px; }
+    h2 { font-size: 13px; margin: 48px 0 16px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+    .hero { display: flex; align-items: center; gap: 22px; margin-bottom: 20px; }
+    .hero img { width: 88px; height: 88px; flex: none; }
+    .lead { font-size: 19px; color: #c5cedb; max-width: 640px; margin: 0 0 30px; }
+    .download {
+      display: inline-flex; flex-direction: column; text-decoration: none;
+      background: var(--accent); color: #1a1405; padding: 14px 30px; border-radius: 10px;
+      font-weight: 700; font-size: 18px; transition: filter .15s;
+    }
+    .download:hover, .download:focus-visible { filter: brightness(1.1); }
+    .download small { font-weight: 500; font-size: 13px; opacity: .8; }
+    .meta { color: var(--muted); font-size: 14px; margin-top: 12px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+    .card h3 { margin: 0 0 4px; font-size: 16px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14.5px; }
+    ol { padding-left: 22px; margin: 0; }
+    ol li { margin-bottom: 8px; }
+    .note { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; padding: 14px 18px; margin-top: 18px; font-size: 15px; }
+    .note p { margin: 0 0 6px; }
+    .note p:last-child { margin: 0; }
+    code { font: 12.5px/1.4 Consolas, monospace; color: var(--muted); word-break: break-all; }
+    footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    @media (max-width: 520px) { h1 { font-size: 30px; } .hero img { width: 64px; height: 64px; } main { padding-top: 36px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="hero">
+      <img src="icon.png" alt="">
+      <h1>Draft Coach</h1>
+    </div>
+    <p class="lead">Der beste Pick aus <em>deinem</em> Champpool – passend zu deinem Team, den Gegnern und deiner eigenen Bilanz. Für die Champion-Auswahl in League of Legends.</p>
+
+    <a class="download" href="https://github.com/karlson79/draft-coach/releases/latest/download/Draft-Coach-Setup-0.1.0.exe">
+      Download für Windows
+      <small>Version 0.1.0 · 78 MB · Windows 10/11 (64 Bit)</small>
+    </a>
+    <p class="meta">Kostenlos, ohne Konto, ohne Admin-Rechte.</p>
+
+    <h2>Was die App macht</h2>
+    <div class="grid">
+      <div class="card"><h3>Pick-Empfehlung</h3><p>Bewertet jeden Champion deines Pools nach Siegrate, Matchup gegen deinen Gegenspieler und Team-Zusammenstellung.</p></div>
+      <div class="card"><h3>Eigener Champpool</h3><p>Du legst pro Lane fest, was du spielst. Vorgeschlagen wird nur, was du auch kannst.</p></div>
+      <div class="card"><h3>Deine Statistik</h3><p>Mastery-Punkte und deine letzten Spiele fließen ein – dein Main schlägt den Konter, den du nie spielst.</p></div>
+      <div class="card"><h3>Ban-Empfehlung</h3><p>Zeigt, welche häufig gespielten Gegner deinem Pool am meisten wehtun.</p></div>
+      <div class="card"><h3>Blind-Pick-Sicherheit</h3><p>Stuft ein, wie konteranfällig ein Champion ist, solange dein Gegenspieler noch offen ist.</p></div>
+      <div class="card"><h3>Overlay</h3><p>Ein kleines Fenster neben dem Client zeigt die Top 3 und verschwindet nach der Auswahl wieder.</p></div>
+    </div>
+
+    <h2>Installation</h2>
+    <ol>
+      <li>Setup-Datei herunterladen und starten.</li>
+      <li>Im Hauptfenster die Lane wählen und über <strong>+ Champion</strong> den eigenen Pool anlegen.</li>
+      <li>League of Legends starten – in der Champion-Auswahl erscheinen die Empfehlungen automatisch.</li>
+    </ol>
+    <div class="note">
+      <p><strong>Windows zeigt eine Warnung.</strong> Die Datei ist nicht signiert, deshalb meldet Windows „Der Computer wurde durch Windows geschützt". Über <em>Weitere Informationen → Trotzdem ausführen</em> geht es weiter.</p>
+      <p>Prüfsumme (SHA-256): <code>B9AD9F091C616709558ABA752C5B79EEA9F9FA0B073F7ED2552F658DFDE07026</code></p>
+    </div>
+
+    <h2>Gut zu wissen</h2>
+    <div class="grid">
+      <div class="card"><h3>Nur lesend</h3><p>Die App liest die Champion-Auswahl aus dem League-Client. Sie wählt, bannt und ändert nichts.</p></div>
+      <div class="card"><h3>Daten bleiben bei dir</h3><p>Champpool und Spielverlauf liegen nur auf deinem PC. Aus dem Netz werden lediglich Champion-Daten und Matchup-Statistiken geladen.</p></div>
+      <div class="card"><h3>Kein Ersatz für Blitz & Co.</h3><p>Runen und Anzeigen im laufenden Spiel gibt es hier nicht – die App kümmert sich nur um den Draft.</p></div>
+    </div>
+
+    <footer>
+      Draft Coach ist ein privates Hobbyprojekt. Draft Coach wird nicht von Riot Games unterstützt und spiegelt nicht die Ansichten oder Meinungen von Riot Games oder anderen Personen wider, die offiziell an der Produktion oder Verwaltung von Riot-Games-Eigentum beteiligt sind. Riot Games und alle zugehörigen Eigentumsrechte sind Marken oder eingetragene Marken von Riot Games, Inc.
+    </footer>
+  </main>
+</body>
+</html>
